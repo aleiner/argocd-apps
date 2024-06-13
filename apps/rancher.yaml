@@ -11,7 +11,7 @@ spec:
     targetRevision: 2.8.4
     helm:
       valueFiles:
-      - $values/rancher/values.yaml
+      - $values/values/rancher_values.yaml
   - repoURL: 'git@github.com:aleiner/argocd-apps.git'
     targetRevision: main
     ref: values
