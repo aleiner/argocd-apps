@@ -7,7 +7,7 @@ spec:
   project: default
   sources:
   - repoURL: 'https://kube-vip.github.io/helm-charts'
-    chart: rancher
+    chart: kube-vip
     targetRevision: 0.6.0
     helm:
       valueFiles:
