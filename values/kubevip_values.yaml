@@ -1,0 +1,12 @@
+config:
+  address: "cluster.10.7.2.224.nip.io"
+env:
+  vip_interface: "ens192"
+  vip_arp: "true"
+  lb_enable: "false"
+  lb_port: "6443"
+  vip_cidr: "32"
+  cp_enable: "true"
+  svc_enable: "true"
+  svc_election: "false"
+  vip_leaderelection: "true"
