@@ -1,5 +1,5 @@
 config:
-  address: "cluster.10.7.2.224.nip.io"
+  address: "10.7.2.224"
 env:
   vip_interface: "ens192"
   vip_arp: "true"
