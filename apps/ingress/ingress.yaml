@@ -1,0 +1,22 @@
+apiVersion: helm.cattle.io/v1
+kind: HelmChartConfig
+metadata:
+  name: rke2-ingress-nginx
+  namespace: kube-system
+spec:
+  valuesContent: |-
+    controller:
+      hostPort:
+        enabled: false
+      config:
+        hsts: "true"
+        hsts-include-subdomains: "true"
+        hsts-max-age: 15724800
+        hsts-preload: "false"
+      publishService:
+        enabled: true
+      service:
+        enabled: true
+        type: LoadBalancer
+        # OPTIONALLY
+        loadBalancerIP: 10.7.2.241

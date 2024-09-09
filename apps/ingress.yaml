@@ -1,0 +1,11 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: ingress
+  namespace: argocd
+spec:
+  project: default
+  sources:
+  - repoURL: 'https://github.com/aleiner/argocd-apps.git'
+    targetRevision: main
+    path: apps/ingress/ingress.yaml
