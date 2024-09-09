@@ -12,3 +12,5 @@ spec:
     path: apps
     repoURL: https://github.com/aleiner/argocd-apps
     targetRevision: main
+  syncPolicy:
+  automated: {}
