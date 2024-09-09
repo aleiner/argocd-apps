@@ -9,3 +9,6 @@ spec:
   - repoURL: 'https://github.com/aleiner/argocd-apps.git'
     targetRevision: main
     path: apps/ingress/ingress.yaml
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: kube-system
