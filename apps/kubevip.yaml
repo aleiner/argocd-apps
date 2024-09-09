@@ -11,7 +11,7 @@ spec:
     targetRevision: 0.6.0
     helm:
       valueFiles:
-      - $values/values/kubevip_values.yaml
+      - $values/apps/kubevip/values.yaml
   #- repoURL: 'git@github.com:aleiner/argocd-apps.git'
   - repoURL: 'https://github.com/aleiner/argocd-apps.git'
     targetRevision: main
